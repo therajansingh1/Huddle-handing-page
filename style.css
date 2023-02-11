@@ -96,7 +96,7 @@ button:hover{
         margin-top: 100px;
     }
  }
- @media only screen and (max-width:420px) {
+ @media only screen and (max-width:475px) {
     body{
         background-image: url(bg-mobile.svg);
         background-repeat: no-repeat;
