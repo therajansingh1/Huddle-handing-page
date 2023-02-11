@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image:url(bg-desktop.svg);
+    margin: 40px;
+    margin-bottom: 0;
+}
+main{
+    height: 90vh;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    width:500px;
+    height: 450px;
+    padding: 20px;
+}
+
+#box1 img{
+    width: 100%;
+    height: 100%;
+}
+#box2{
+    padding:20px 40px;
+}
+h2{
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    color:hsl(257, 40%, 49%) ;
+    margin-top: 30px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow:3px 3px 10px rgb(51, 48, 48);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #ffff;
+}
+.social-media{
+    text-align: right;
+    padding-right:60px ;
+    margin-bottom: 10px;
+}
+.social-media a{
+    border: 1px solid #ffff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #ffff;
+}
+.social-media a:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+.attribution {
+     font-size: 11px; text-align: center;
+     }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media only screen and (max-width:800px) {
+    .box{
+        width: 400px;
+        height: 330px;
+    }
+    #box2{
+        padding:20px 20px;
+    }
+    button{
+        margin-top: 15px;
+    }
+    h2{
+        margin-bottom:0 ;
+        line-height: 1.2;
+    }
+    p{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .social-media{
+        margin-top: 100px;
+    }
+ }
+ @media only screen and (max-width:380px) {
+    body{
+        background-image: url(bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    main{
+        height: 130vh;
+    }
+    .container{
+         max-width: 80%;
+        margin:auto;
+        flex-direction: column;
+    }
+    .box{
+        width: 250px;
+        height: 300px;
+    }
+    h2{
+        margin: 0;
+    }
+    p{
+        padding-top: 15px;
+    }
+    .social-media{
+        margin-top: 40px;
+    }
+ }
